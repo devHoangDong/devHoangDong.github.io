@@ -242,6 +242,8 @@ body {
 .container2 {
   justify-content: center;
   margin-top: 7rem;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .container2 .sp-container {
   display: flex;
@@ -253,6 +255,13 @@ body {
 .container2 .shop {
   height: 45rem;
   width: 100vw;
+  order: 3;
+}
+.container2 .sp1 {
+  order: 2;
+}
+.container2 .sp2 {
+  order: 1;
 }
 .container2 .sp .pic {
   height: 25rem;
@@ -636,12 +645,13 @@ hr {
   flex-wrap: wrap;
 }
 .footer .cot {
+  width: 6rem;
   padding-right: 4rem;
   float: left;
   font-family: "Poppins", Arial, sans-serif;
 }
 .footer .cot1 {
-  width: 100vw;
+  width: 25rem;
 }
 .footer .cot h6 {
   font-size: 1.6rem;
