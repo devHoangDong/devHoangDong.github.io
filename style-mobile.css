@@ -636,13 +636,13 @@ hr {
   flex-wrap: wrap;
 }
 .footer .cot {
-  width: 6rem;
+  width: 10rem;
   padding-right: 4rem;
   float: left;
   font-family: "Poppins", Arial, sans-serif;
 }
 .footer .cot1 {
-  width: 25rem;
+  width: 100vw;
 }
 .footer .cot h6 {
   font-size: 1.6rem;
