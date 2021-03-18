@@ -1,691 +1,691 @@
 html {
-  font-size: 8px;
-}
-@media only screen and (max-width: 600px) {
-  html {
     font-size: 8px;
-    overflow-x: hidden;
-}
-body {
-    font-family: "Poppins", Arial, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    font-size: 1em;
-    width: 100vw;
-}
-.header {
-    background-color:#6ea93a;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    height: 1.98em;
-    width: 100%;
-}
-.header ul {
-    list-style: none;
-    margin: 0 1em;
-    display: inline-flex;
-    width: 100%;
-    align-items: center;
-    position: relative;
-    padding-left: 0em;
-    font-size: 1.65vw;
-    line-height: 2.48em;
-}
-.header ul li {
-    box-sizing: border-box;
-    margin-right: 4em;
-    color: white;
-    text-transform: uppercase;
-    flex-grow: 2;
-    font-size: 1.65vw;
-    font-weight: 400;
-    line-height: 2.48em;
-}
-.header ul li:first-child {
-  margin-left: 1em;
-}
-#ship {
-    flex-grow: 4;
-}
-.menubar {
-    height: 6.78rem;
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    transition: top 0.1s ease-in-out;
-    z-index: 999;
-    background-color: white;
-}
-.menubar .shopname {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 8px;
+      overflow-x: hidden;
+  }
+  body {
+      font-family: "Poppins", Arial, sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      font-size: 1em;
+      width: 100vw;
+  }
+  .header {
+      background-color:#6ea93a;
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+      height: 1.98em;
+      width: 100%;
+  }
+  .header ul {
+      list-style: none;
+      margin: 0 1em;
+      display: inline-flex;
+      width: 100%;
+      align-items: center;
+      position: relative;
+      padding-left: 0em;
+      font-size: 1.65vw;
+      line-height: 2.48em;
+  }
+  .header ul li {
+      box-sizing: border-box;
+      margin-right: 4em;
+      color: white;
+      text-transform: uppercase;
+      flex-grow: 2;
+      font-size: 1.65vw;
+      font-weight: 400;
+      line-height: 2.48em;
+  }
+  .header ul li:first-child {
+    margin-left: 1em;
+  }
+  #ship {
+      flex-grow: 4;
+  }
+  .menubar {
+      height: 6.78rem;
+      position: fixed;
+      width: 100vw;
+      top: 0;
+      transition: top 0.1s ease-in-out;
+      z-index: 999;
+      background-color: white;
+  }
+  .menubar .shopname {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 6.78rem;
+      font-size: 1.5rem;
+      width: 100vw;
+      text-align: center;
+  }
+  .menubar .shopname i {
+    float: right;
+    color: rgb(110,169,58);
+    justify-content: center;
+    vertical-align: middle;
     line-height: 6.78rem;
-    font-size: 1.5rem;
-    width: 100vw;
+    width: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .menubar .shopname i:hover {
+    cursor: pointer;
+  }
+  .menubar .shopname a {
+      font-size: 1.25em;
+      font-weight: 800;
+      color:#6ea93a;
+      text-decoration: none;
+      transition: 0.3s all ease;
+      padding-left: 4rem;
+      line-height: 6.78rem;
+  }
+  .menubar .shopname a:hover {
+      color: black;
+  }
+  .menubar .mainmenu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      height: 6.78rem;
+      line-height: 6rem;
+      margin-top: 0;
+      float: right;
+  }
+  .menubar .mainmenu ul a {
+      display: inline;
+      text-decoration: none;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      color: #fff;
+      opacity: 1;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+  }
+  .menubar .mainmenu {
+      float: right;
+      flex-grow: 3;
+      width: 20rem;
+      height: 40rem;
+      visibility: hidden;
+  }
+  .menubar .mainmenu ul li {
+    display: inline;
+    background-color: rgba(110,169,58,.85);
+    width: 20rem;
     text-align: center;
-}
-.menubar .shopname i {
-  float: right;
-  color: rgb(110,169,58);
-  justify-content: center;
-  vertical-align: middle;
-  line-height: 6.78rem;
-  width: 2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-.menubar .shopname i:hover {
-  cursor: pointer;
-}
-.menubar .shopname a {
-    font-size: 1.25em;
-    font-weight: 800;
-    color:#6ea93a;
-    text-decoration: none;
-    transition: 0.3s all ease;
-    padding-left: 4rem;
-    line-height: 6.78rem;
-}
-.menubar .shopname a:hover {
+  }
+  .menubar .mainmenu ul li:hover {
+    background-color: #fff;
+    color: rgb(110,169,58);
+    cursor: pointer;
+  }
+  .menubar .mainmenu ul a:hover {
+    color: #6ea93a;;
+  }
+    #slideshow {
+      overflow: hidden;
+      height: 65em;
+      max-width: 100%;
+    }
+    
+    .slide-wrapper {
+      height: 65em;
+      width: 608em;
+      -webkit-animation: slide 18s linear infinite;
+    }
+    
+    .slide {
+      float: left;
+      height: 65em;
+      width: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
+    .slide:nth-child(1) {
+      background-image: url('img/001.jpg');
+    }
+    
+    .slide:nth-child(2) {
+      background-image: url('img/002.jpg');
+    }
+    
+    .slide:nth-child(3) {
+      background-image: url('img/003.jpg');
+    }
+    
+    .slide:nth-child(4) {
+      background-image: url('img/004.jpg');
+    }
+    .slide-number {
+      font-size: 3vw;
+      color: #fff;
+      font-weight: 400;
+      font-family: "amatic sc",cursive;
+      text-align: center;
+      height: 65em;
+      line-height: 65em;
+      margin-top: 0;
+    }
+    
+    @-webkit-keyframes slide {
+      20% {margin-left: em;}
+      30% {margin-left: -152em;}
+      50% {margin-left: -152em;}
+      60% {margin-left: -304em;}
+      70% {margin-left: -304em;}
+      80% {margin-left: -304em;}
+      90% {margin-left: -304em;}
+    }
+    .container1 {
+      text-align: center;
+      width: 18rem;
+    }
+   .items .circle {
+    height: 8.5rem;
+    width: 8.5rem;
+    border-radius: 50%;
+    border: solid 1px whitesmoke;
+    margin: 0 auto;
+    margin-top: 9rem;
+  }
+  .items .circle > i {
+    font-size: xx-large;
+    align-items: center;
+    padding: 2.5rem 0 0 em;
+    line-height: 8.5rem;
+  }
+  .container1 > p {
+    padding-top: 1.5rem;
+    display: inline-block;
+  }
+  #text2 {
+    color: #B3B3B3;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .items .circle:hover {
+    background-color: #6ea93a;
+    box-shadow: 0 0 0 1.2em #6ea93a;
+  }
+  .items .item1 {
+    background-color: #E4B2D6;
+    box-shadow: 0 0 0 1.2em #E4B2D6;
+  }
+  .items .item2 {
+    background-color: #DCC698;
+    box-shadow: 0 0 0 1.2em #DCC698;
+  }
+  .items .item3 {
+    background-color: #A2D1E1;
+    box-shadow: 0 0 0 1.2em #A2D1E1;
+  } 
+  .items .item4 {
+    background-color: #DCD691;
+    box-shadow: 0 0 0 1.2em #DCD691;
+  }
+  .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .container2 {
+    justify-content: center;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container2 .sp-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container2 .sp {
+    height: 52rem;
+  }
+  .container2 .shop {
+    height: 45rem;
+    width: 100vw;
+    order: 3;
+  }
+  .container2 .sp1 {
+    order: 2;
+  }
+  .container2 .sp2 {
+    order: 1;
+  }
+  .container2 .sp .pic {
+    height: 25rem;
+    width: 100vw;
+  }
+  .container2 .sp .pic img {
+    height: 25em;
+    width: 100vw;
+    object-fit: cover;
+  }
+  .container2 .sp .pic {
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  .container2 .sp .pig {
+    padding-bottom: 1rem;
+  }
+  .container2 .shop {
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+  .container2 .shop p:nth-of-type(1) {
+    color: #6ea93a;
+    font-size: 2.4em;
+    margin-top: em;
+    margin-bottom: em;
+  }
+  .container2 .shop p:nth-of-type(2) {
+    color: #B3B3B3;
+    font-size: 1.6em;
+  }
+  .container2 .shop button {
+    background-color: #6ea93a;
+    border-radius: 2.5em;
+    width: 10em;
+    height: 4em;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    border: solid 1px #6ea93a;
+  }
+  .container2 .shop button:hover {
+    background-color: white;
+    color: #6ea93a;
+    cursor: pointer;
+  }
+  .container2 .sp .pic div > button {
+    position: absolute;
+    bottom: 2em;
+    left: em;
+    background-color: #6ea93a;
+    width: 10em;
+    height: 4em;
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    border: solid 1px #6ea93a;
+  }
+  .container2 .shop .pic-shop {
+    position: absolute;
+    height: 25rem;
+    bottom: 1em;
+    width: 100vw;
+  }
+  .container2 .shop .pic-shop img {
+    width: 100vw;
+    height: 25rem;
+    object-fit: cover;
+  }
+  .container2 .sp .shop-text {
+    margin-left: -3em;
+  }
+  .container2 .sp .pic div > button:hover {
+    cursor: pointer;
+  }
+  .listshop h4 {
+    color: #6ea93a;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: lighter;
+  }
+  .listshop .indam {
     color: black;
-}
-.menubar .mainmenu ul {
-    list-style: none;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .listshop .chuthuong {
+    color: #B3B3B3;
+    font-size: 1.6em;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .listshop {
+    margin-top: 10rem;
+  }
+  .products {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 3em;
+  }
+  .products .sanpham {
+    margin: 1em;
+    border: solid 1px white;
+    position: relative;
+    height: 28em;
+    text-align: center;
+  }
+  .products .sanpham .zoom > img {
+    object-fit: cover;
+    width: 18em;
+    height: 15em;
+  }
+  .products .sanpham .giasp {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 4em;
+  }
+  .products .sanpham .giasp .tensp {
     text-transform: uppercase;
-    height: 6.78rem;
-    line-height: 6rem;
-    margin-top: 0;
-    float: right;
-}
-.menubar .mainmenu ul a {
-    display: inline;
+    color: black;
+    font-size: 1.6em;
+  }
+  .products .sanpham .giasp .gia {
+    color: #6ea93a;
+    margin-top: -1em;
+  }
+  /* [1] The container */
+  .products .zoom {
+    height: 20em; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .products .zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .products .zoom:hover img {
+    transform: scale(1.15);
+  }
+  .countdown {
+    height: 60rem;
+    width: 100vw;
+  }
+  .countdown img {
+    object-fit: cover;
+    height: 60rem;
+    margin: 0 auto;
+    width: 100vw;
+    display: block;
+    margin-top: 10rem;
+    filter: blur(2px);
+  }
+  .countdown .anh {
+    position: relative;
+  }
+  .countdown .anh .thongtin {
+    position: absolute;
+    z-index: 2;
+    top: 30rem;
+    left: 50%;
+    text-align: center;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+  }
+  .countdown .anh .thongtin .xanhlacay {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: #6ea93a;
+  }
+  .countdown .anh .thongtin .to {
+    color: black;
+    font-size: 3em;
+    font-weight: bolder;
+  }
+  .countdown .anh .thongtin .ghi {
+    color: #808080;
+    font-size: 1.5em;
+  }
+  .countdown .anh .thongtin .masanpham {
+    color: green;
+    font-size: 2em;
+  }
+  .countdown .anh .thongtin .giacu {
+    color: #808080;
+    font-size: 1.8em;
+    text-decoration: line-through;
+  }
+  .countdown .anh .thongtin .giamoi {
+    color: green;
     text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 0.1em;
-    color: #fff;
-    opacity: 1;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-.menubar .mainmenu {
-    float: right;
-    flex-grow: 3;
-    width: 20rem;
+    font-size: 1.8em;
+  }
+  .countdown .anh .thongtin .chu {
+    margin-top: 2em;
+    margin-bottom: 2rem;
+  }
+  .countdown .anh .thongtin .demnguoc {
+    color: green;
+    font-size: 4rem;
+  }
+  .comments .xanhlacay {
+    color: green;
+    font-size: 1.8rem;
+  } 
+  .comments .indam {
+    color: black;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .comments .slogan {
+    color: #808080;
+    font-size: 1.8rem;
+  }
+  .comments {
+    text-align: center;
+    margin-top: 10rem;
+  }
+  .slideshow-container {
+    position: relative;
+    background: white;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 8rem;
+    text-align: center;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 0.3rem 0 0 0.3rem;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 2rem;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #6ea93a;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+  .quotes {
     height: 40rem;
-    visibility: hidden;
-}
-.menubar .mainmenu ul li {
-  display: inline;
-  background-color: rgba(110,169,58,.85);
-  width: 20rem;
-  text-align: center;
-}
-.menubar .mainmenu ul li:hover {
-  background-color: #fff;
-  color: rgb(110,169,58);
-  cursor: pointer;
-}
-.menubar .mainmenu ul a:hover {
-  color: #6ea93a;;
-}
-  #slideshow {
-    overflow: hidden;
-    height: 65em;
-    max-width: 100%;
+    margin-bottom: 15rem;
   }
-  
-  .slide-wrapper {
-    height: 65em;
-    width: 608em;
-    -webkit-animation: slide 18s linear infinite;
+  .quotes .slideshow-container .mySlides .khachhang img {
+    border: solid 1px white;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
   }
-  
-  .slide {
+  .logoitems {
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+  }
+  .logoitems img {
+    display: inline;
+    object-fit: scale-down;
+    height: 4rem;
+  }
+  .logoitems .anhlogo {
+    height: 4rem;
+    width: 12rem;
+    margin-left: 2rem;
+  }
+  .subcribe {
+    height: 20rem;
+    background-color: #F7F6F2;
+    display: flex;
+    align-items: center;
+  }
+  .subcribe .p1 {
+    margin-left: 5rem;
+    margin-right: 10rem;
+  }
+  .subcribe .inputmail {
+    width: 50rem;
+  }
+  .subcribe .inputmail button:hover {
+    cursor: pointer;
+  }
+  .subcribe .chuto {
+    font-size: 2.5rem;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: em;
+  }
+  .subcribe .chunho {
+    font-size: 1.2rem;
+    color: #808080;
+  }
+  .subcribe .inputmail input[type=text] {
+    width: 25rem;
+    padding: 1rem 1.5rem;
     float: left;
-    height: 65em;
-    width: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    border: none;
   }
-  .slide:nth-child(1) {
-    background-image: url('img/001.jpg');
+  .subcribe .inputmail button {
+    float: left;
+    padding: 1rem 1.5rem;
+    background-color: #6ea93a;
+    color: white;
+    border: none;
   }
-  
-  .slide:nth-child(2) {
-    background-image: url('img/002.jpg');
-  }
-  
-  .slide:nth-child(3) {
-    background-image: url('img/003.jpg');
-  }
-  
-  .slide:nth-child(4) {
-    background-image: url('img/004.jpg');
-  }
-  .slide-number {
-    font-size: 3vw;
-    color: #fff;
-    font-weight: 400;
-    font-family: "amatic sc",cursive;
+  .scroll {
+    margin: 0 auto;
+    border: solid 1px white;
+    border-radius: 50% 50%;
+    margin-top: -3rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: #6ea93a;
     text-align: center;
-    height: 65em;
-    line-height: 65em;
-    margin-top: 0;
   }
-  
-  @-webkit-keyframes slide {
-    20% {margin-left: em;}
-    30% {margin-left: -152em;}
-    50% {margin-left: -152em;}
-    60% {margin-left: -304em;}
-    70% {margin-left: -304em;}
-    80% {margin-left: -304em;}
-    90% {margin-left: -304em;}
+  .scroll a {
+    text-decoration: none;
+    line-height: 5rem;
+    width: 5rem;
+    color: white;
   }
-  .container1 {
+  .footer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  .footer .cot {
+    width: 6rem;
+    padding-right: 4rem;
+    float: left;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+  .footer .cot1 {
+    width: 25rem;
+  }
+  .footer .cot h6 {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  .footer .cot a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+  .footer .cot2 a:hover {
+    cursor: pointer;
+  } 
+  .mangxahoi {
+    margin-left: 5rem;
+  }
+  .mangxahoi > div {
+    position: relative;
+    border-radius: 50% 50%;
+    background-color:#F0F0F0;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
     text-align: center;
-    width: 18rem;
+    vertical-align: middle;
   }
- .items .circle {
-  height: 8.5rem;
-  width: 8.5rem;
-  border-radius: 50%;
-  border: solid 1px whitesmoke;
-  margin: 0 auto;
-  margin-top: 9rem;
-}
-.items .circle > i {
-  font-size: xx-large;
-  align-items: center;
-  padding: 2.5rem 0 0 em;
-  line-height: 8.5rem;
-}
-.container1 > p {
-  padding-top: 1.5rem;
-  display: inline-block;
-}
-#text2 {
-  color: #B3B3B3;
-  margin-top: 0;
-  padding-top: 0;
-}
-.items .circle:hover {
-  background-color: #6ea93a;
-  box-shadow: 0 0 0 1.2em #6ea93a;
-}
-.items .item1 {
-  background-color: #E4B2D6;
-  box-shadow: 0 0 0 1.2em #E4B2D6;
-}
-.items .item2 {
-  background-color: #DCC698;
-  box-shadow: 0 0 0 1.2em #DCC698;
-}
-.items .item3 {
-  background-color: #A2D1E1;
-  box-shadow: 0 0 0 1.2em #A2D1E1;
-} 
-.items .item4 {
-  background-color: #DCD691;
-  box-shadow: 0 0 0 1.2em #DCD691;
-}
-.items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.container2 {
-  justify-content: center;
-  margin-top: 7rem;
-  display: flex;
-  flex-direction: column-reverse;
-}
-.container2 .sp-container {
-  display: flex;
-  flex-direction: column;
-}
-.container2 .sp {
-  height: 52rem;
-}
-.container2 .shop {
-  height: 45rem;
-  width: 100vw;
-  order: 3;
-}
-.container2 .sp1 {
-  order: 2;
-}
-.container2 .sp2 {
-  order: 1;
-}
-.container2 .sp .pic {
-  height: 25rem;
-  width: 100vw;
-}
-.container2 .sp .pic img {
-  height: 25em;
-  width: 100vw;
-  object-fit: cover;
-}
-.container2 .sp .pic {
-  padding-bottom: 1rem;
-  position: relative;
-}
-.container2 .sp .pig {
-  padding-bottom: 1rem;
-}
-.container2 .shop {
-  display: block;
-  text-align: center;
-  position: relative;
-}
-.container2 .shop p:nth-of-type(1) {
-  color: #6ea93a;
-  font-size: 2.4em;
-  margin-top: em;
-  margin-bottom: em;
-}
-.container2 .shop p:nth-of-type(2) {
-  color: #B3B3B3;
-  font-size: 1.6em;
-}
-.container2 .shop button {
-  background-color: #6ea93a;
-  border-radius: 2.5em;
-  width: 10em;
-  height: 4em;
-  text-align: center;
-  color: white;
-  font-size: 1.6em;
-  border: solid 1px #6ea93a;
-}
-.container2 .shop button:hover {
-  background-color: white;
-  color: #6ea93a;
-  cursor: pointer;
-}
-.container2 .sp .pic div > button {
-  position: absolute;
-  bottom: 2em;
-  left: em;
-  background-color: #6ea93a;
-  width: 10em;
-  height: 4em;
-  text-align: center;
-  font-size: 1.6em;
-  color: white;
-  border: solid 1px #6ea93a;
-}
-.container2 .shop .pic-shop {
-  position: absolute;
-  height: 25rem;
-  bottom: 1em;
-  width: 100vw;
-}
-.container2 .shop .pic-shop img {
-  width: 100vw;
-  height: 25rem;
-  object-fit: cover;
-}
-.container2 .sp .shop-text {
-  margin-left: -3em;
-}
-.container2 .sp .pic div > button:hover {
-  cursor: pointer;
-}
-.listshop h4 {
-  color: #6ea93a;
-  font-size: 1.8em;
-  text-align: center;
-  text-transform: capitalize;
-  font-weight: lighter;
-}
-.listshop .indam {
-  color: black;
-  font-size: 3em;
-  font-weight: bolder;
-  text-align: center;
-  text-transform: capitalize;
-}
-.listshop .chuthuong {
-  color: #B3B3B3;
-  font-size: 1.6em;
-  text-align: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-.listshop {
-  margin-top: 10rem;
-}
-.products {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-  width: 100vw;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  margin-top: 3em;
-}
-.products .sanpham {
-  margin: 1em;
-  border: solid 1px white;
-  position: relative;
-  height: 28em;
-  text-align: center;
-}
-.products .sanpham .zoom > img {
-  object-fit: cover;
-  width: 18em;
-  height: 15em;
-}
-.products .sanpham .giasp {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 4em;
-}
-.products .sanpham .giasp .tensp {
-  text-transform: uppercase;
-  color: black;
-  font-size: 1.6em;
-}
-.products .sanpham .giasp .gia {
-  color: #6ea93a;
-  margin-top: -1em;
-}
-/* [1] The container */
-.products .zoom {
-  height: 20em; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-}
-
-/* [2] Transition property for smooth transformation of images */
-.products .zoom img {
-  transition: transform .5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-.products .zoom:hover img {
-  transform: scale(1.15);
-}
-.countdown {
-  height: 60rem;
-  width: 100vw;
-}
-.countdown img {
-  object-fit: cover;
-  height: 60rem;
-  margin: 0 auto;
-  width: 100vw;
-  display: block;
-  margin-top: 10rem;
-  filter: blur(2px);
-}
-.countdown .anh {
-  position: relative;
-}
-.countdown .anh .thongtin {
-  position: absolute;
-  z-index: 2;
-  top: 30rem;
-  left: 50%;
-  text-align: center;
-  width: 80vw;
-  transform: translate(-50%, -50%);
-}
-.countdown .anh .thongtin .xanhlacay {
-  font-size: 2.4rem;
-  text-transform: capitalize;
-  color: #6ea93a;
-}
-.countdown .anh .thongtin .to {
-  color: black;
-  font-size: 3em;
-  font-weight: bolder;
-}
-.countdown .anh .thongtin .ghi {
-  color: #808080;
-  font-size: 1.5em;
-}
-.countdown .anh .thongtin .masanpham {
-  color: green;
-  font-size: 2em;
-}
-.countdown .anh .thongtin .giacu {
-  color: #808080;
-  font-size: 1.8em;
-  text-decoration: line-through;
-}
-.countdown .anh .thongtin .giamoi {
-  color: green;
-  text-decoration: none;
-  font-size: 1.8em;
-}
-.countdown .anh .thongtin .chu {
-  margin-top: 2em;
-  margin-bottom: 2rem;
-}
-.countdown .anh .thongtin .demnguoc {
-  color: green;
-  font-size: 4rem;
-}
-.comments .xanhlacay {
-  color: green;
-  font-size: 1.8rem;
-} 
-.comments .indam {
-  color: black;
-  font-size: 2.5rem;
-  text-transform: capitalize;
-  text-align: center;
-}
-.comments .slogan {
-  color: #808080;
-  font-size: 1.8rem;
-}
-.comments {
-  text-align: center;
-  margin-top: 10rem;
-}
-.slideshow-container {
-  position: relative;
-  background: white;
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 8rem;
-  text-align: center;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 0.3rem 0 0 0.3rem;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 2rem;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #6ea93a;
-}
-
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
-.quotes {
-  height: 40rem;
-  margin-bottom: 15rem;
-}
-.quotes .slideshow-container .mySlides .khachhang img {
-  border: solid 1px white;
-  border-radius: 50%;
-  margin-bottom: 5rem;
-  height: 10rem;
-  width: 10rem;
-  object-fit: cover;
-}
-.logoitems {
-  margin: 0 auto;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-hr {
-  height: 1px;
-  background-color: #ccc;
-  border: none;
-}
-.logoitems img {
-  display: inline;
-  object-fit: scale-down;
-  height: 4rem;
-}
-.logoitems .anhlogo {
-  height: 4rem;
-  width: 12rem;
-  margin-left: 2rem;
-}
-.subcribe {
-  height: 20rem;
-  background-color: #F7F6F2;
-  display: flex;
-  align-items: center;
-}
-.subcribe .p1 {
-  margin-left: 5rem;
-  margin-right: 10rem;
-}
-.subcribe .inputmail {
-  width: 50rem;
-}
-.subcribe .inputmail button:hover {
-  cursor: pointer;
-}
-.subcribe .chuto {
-  font-size: 2.5rem;
-  color: black;
-  text-transform: capitalize;
-  margin-bottom: em;
-}
-.subcribe .chunho {
-  font-size: 1.2rem;
-  color: #808080;
-}
-.subcribe .inputmail input[type=text] {
-  width: 25rem;
-  padding: 1rem 1.5rem;
-  float: left;
-  border: none;
-}
-.subcribe .inputmail button {
-  float: left;
-  padding: 1rem 1.5rem;
-  background-color: #6ea93a;
-  color: white;
-  border: none;
-}
-.scroll {
-  margin: 0 auto;
-  border: solid 1px white;
-  border-radius: 50% 50%;
-  margin-top: -3rem;
-  height: 5rem;
-  width: 5rem;
-  background-color: #6ea93a;
-  text-align: center;
-}
-.scroll a {
-  text-decoration: none;
-  line-height: 5rem;
-  width: 5rem;
-  color: white;
-}
-.footer {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-}
-.footer .cot {
-  width: 6rem;
-  padding-right: 4rem;
-  float: left;
-  font-family: "Poppins", Arial, sans-serif;
-}
-.footer .cot1 {
-  width: 25rem;
-}
-.footer .cot h6 {
-  font-size: 1.6rem;
-  margin-bottom: 1.6rem;
-}
-.footer .cot a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  margin-bottom: 1.6rem;
-}
-.footer .cot2 a:hover {
-  cursor: pointer;
-} 
-.mangxahoi {
-  margin-left: 5rem;
-}
-.mangxahoi > div {
-  position: relative;
-  border-radius: 50% 50%;
-  background-color:#F0F0F0;
-  height: 3rem;
-  width: 3rem;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-}
-.mangxahoi div a {
-  height: 3rem;
-  line-height: 3rem;
-  vertical-align: middle;
-  width: 3rem;
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-  display: inline-block;
-}
+  .mangxahoi div a {
+    height: 3rem;
+    line-height: 3rem;
+    vertical-align: middle;
+    width: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    display: inline-block;
+  }
