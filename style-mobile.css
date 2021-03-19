@@ -574,13 +574,16 @@ html {
   }
   .logoitems img {
     display: inline;
-    object-fit: scale-down;
+    object-fit: cover;
     height: 4rem;
+    width: 100%;
   }
   .logoitems .anhlogo {
     height: 4rem;
     width: 12rem;
     margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
   }
   .subcribe {
     height: 20rem;
@@ -645,13 +648,13 @@ html {
     flex-wrap: wrap;
   }
   .footer .cot {
-    width: 6rem;
+    width: auto;
     padding-right: 4rem;
     float: left;
     font-family: "Poppins", Arial, sans-serif;
   }
   .footer .cot1 {
-    width: 25rem;
+    width: 100%;
   }
   .footer .cot h6 {
     font-size: 1.6rem;

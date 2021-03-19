@@ -1,5 +1,6 @@
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 768px) {
   html {
@@ -66,6 +67,9 @@ body {
     margin-right: 1rem;
     font-size: 1.5rem;
 }
+.menubar .shopname i {
+  display: none;
+}
 .menubar .shopname a {
     font-size: 1.5rem;
     font-weight: 800;
@@ -78,6 +82,7 @@ body {
     color: black;
 }
 .menubar .mainmenu ul {
+  width: 70rem;
     list-style: none;
     display: inline-flex;
     text-transform: uppercase;
@@ -514,6 +519,7 @@ q {font-style: italic;}
   margin-top: 10rem;
   margin-bottom: 10rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 hr {
@@ -523,13 +529,16 @@ hr {
 }
 .logoitems img {
   display: inline;
-  object-fit: scale-down;
-  height: 5rem;
+  object-fit: cover;
+  height: 4rem;
+  width: 100%;
 }
 .logoitems .anhlogo {
   height: 5rem;
   width: 12rem;
   margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
 }
 .subcribe {
   height: 20rem;
