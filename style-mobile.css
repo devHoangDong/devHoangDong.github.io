@@ -5,7 +5,7 @@ html {
     html {
       font-size: 8px;
       overflow-x: hidden;
-  }
+  } }
   body {
       font-family: "Poppins", Arial, sans-serif;
       box-sizing: border-box;
@@ -691,4 +691,4 @@ html {
     color: black;
     font-size: 2rem;
     display: inline-block;
-  }
+  } 
