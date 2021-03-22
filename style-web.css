@@ -195,7 +195,7 @@ body {
   display: inline-block;
   font-size: 2rem;
 }
-#text2 {
+#text2, #text2a, #text2b, #text2c {
   font-size: 1.6rem;
   color: #b3b3b3;
   margin-top: 0;
