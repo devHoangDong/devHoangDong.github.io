@@ -1,0 +1,107 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+.slide-container {
+    list-style: none;
+    overflow: hidden;
+    width: 60vw;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    display: inline-block;
+}
+
+.slide-container li {
+    display: inline-block;
+    width: 60vw;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.slide {
+    width: 60vw;
+    margin: 0px auto;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+}
+
+.slide li a {
+    display: inline-block;
+}
+
+.slide li img {
+    width: 60vw;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    width: 40px;
+    height: 74px;
+    background: url(img/focus_btn.png) no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -37px;
+    z-index: 10;
+}
+
+.prev,
+.next {
+    position: absolute;
+    width: 40px;
+    height: 74px;
+    background: url(img/focus_btn.png) no-repeat;
+    top: 50%;
+    margin-top: -37px;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+    background-position: 0 -74px;
+    cursor: pointer;
+}
+
+.next {
+    top: 50%;
+    margin-top: -37px;
+    right: 0;
+    background-position: -40px -74px;
+    cursor: pointer;
+}
+
+.prev:hover {
+    background-position: 0 0;
+}
+
+.next:hover {
+    background-position: -40px 0;
+}
+
+.slide-tabs {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    margin-left: -44px;
+    z-index: 10;
+}
+
+.slide-tabs li {
+    display: none;
+}
+
+.active {
+    z-index: 5;
+}
+
+.container {
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
