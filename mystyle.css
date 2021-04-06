@@ -1,0 +1,332 @@
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #2A2A2A;
+    font-size: 10px;
+}
+
+
+.present-text {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'MontSerrat', Tahoma, Arial, sans-serif;
+    color: gainsboro;
+}
+
+header {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'MontSerrat', Tahoma, Arial, sans-serif;
+    line-height: 2rem;
+}
+
+header .head-title {
+    color: #CACACA;
+    font-size: 4rem;
+}
+
+header .head-text {
+    color: #6D6D6D;
+    line-height: 3rem;
+}
+
+.nav-button {
+    width: 60vw;
+    margin: 0 auto 2rem;
+}
+
+.project-grid {
+    width: 60vw;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 6rem 20vw;
+}
+
+.project {
+    width: 45%;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project .project-bar {
+    background-color: #DDDDDD;
+    height: 2.5rem;
+    text-align: center;
+}
+
+.bar-title {
+    font-size: 1rem;
+    font-family: 'MontSerrat', Tahoma, Arial, sans-serif;
+    color: #6D6D6D;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.project-bar .bar-icon {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: #ff5f57;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+.project-bar .bar-icon::before {
+    content: " ";
+    left: 16px;
+    top: 0;
+    background-color: #ffbd2e;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.project-bar .bar-icon::after {
+    content: " ";
+    left: 32px;
+    background-color: #28ca41;
+    top: 0;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* thumb img project */
+
+
+.project-grid .project .project1-img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-image: url(img/project1-1.png);
+    background-size: cover;
+}
+
+.project-grid .project .project1-img .project1-thumb {
+    transform: translate3d(0, -100%, 0);
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: 20rem;
+}
+
+.project-grid .project:hover .project1-img .project1-thumb {
+    transform: translate3d(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project1-2.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project-grid .project .project2-img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-image: url(img/project2-1.png);
+    background-size: cover;
+}
+
+.project-grid .project .project2-img .project2-thumb {
+    transform: translate3d(0, -100%, 0);
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: 20rem;
+}
+
+.project-grid .project:hover .project2-img .project2-thumb {
+    transform: translate3d(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project2-2.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project-grid .project .project3-img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-image: url(img/project3-1.png);
+    background-size: cover;
+}
+
+.project-grid .project .project3-img .project3-thumb {
+    transform: translate3d(0, -100%, 0);
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: 20rem;
+}
+
+.project-grid .project:hover .project3-img .project3-thumb {
+    transform: translate3d(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project3-2.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project-grid .project .project4-img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-image: url(img/project4-1.png);
+    background-size: cover;
+}
+
+.project-grid .project .project4-img .project4-thumb {
+    transform: translate3d(0, -100%, 0);
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: 20rem;
+}
+
+.project-grid .project:hover .project4-img .project4-thumb {
+    transform: translate3d(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project4-1.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project-grid .project .project5-img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-image: url(img/project5-1.png);
+    background-size: cover;
+}
+
+.project-grid .project .project5-img .project5-thumb {
+    transform: translate3d(0, -100%, 0);
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: 20rem;
+}
+
+.project-grid .project:hover .project5-img .project5-thumb {
+    transform: translate3d(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project5-1.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.project-grid .project .project6-img {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-image: url(img/project6-1.png);
+    background-size: cover;
+}
+
+.project-grid .project .project6-img .project6-thumb {
+    transform: translate3d(0, -100%, 0);
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    height: 20rem;
+}
+
+.project-grid .project:hover .project6-img .project6-thumb {
+    transform: translate3d(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project6-2.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.category-tag {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+}
+
+.tag-btn {
+    visibility: hidden;
+    text-align: center;
+    padding: .5rem 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #2A2A2A;
+    color: #CACACA;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: .25rem;
+    margin-bottom: .25rem;
+}
+
+/* button animation */
+
+.project-grid .project:hover .project1-img .tag-btn {
+    animation: 500ms ease-out 0.75s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+
+.project-grid .project:hover .project2-img .tag-btn {
+    animation: 500ms ease-out 0.75s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+
+.project-grid .project:hover .project3-img .tag-btn {
+    animation: 500ms ease-out 0.75s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+
+.project-grid .project:hover .project4-img .tag-btn {
+    animation: 500ms ease-out 0.75s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+
+.project-grid .project:hover .project5-img .tag-btn {
+    animation: 500ms ease-out 0.75s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+
+.project-grid .project:hover .project6-img .tag-btn {
+    animation: 500ms ease-out 0.75s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-40%);
+    }
+
+    50% {
+        transform: translateY(5%);
+    }
+
+    75% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
