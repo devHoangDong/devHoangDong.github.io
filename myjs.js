@@ -14,11 +14,11 @@ function typeWriter() {
         i++;
     }
     setTimeout(typeWriter, speed);
-    setTimeout(clearText, 10000)
 }
-function clearText() {
-    if (i >= text1.length) {
-    document.getElementById('presentText1').innerHTML = '';
-    document.getElementById('presentText2').innerHTML = '';
-}
-}
+
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".present-ext").fadeOut("slow");
+	});
