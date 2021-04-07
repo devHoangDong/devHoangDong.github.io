@@ -42,7 +42,53 @@ header .head-text {
 
 .nav-button {
     width: 60vw;
-    margin: 0 auto 2rem;
+    margin: 4rem auto 2rem auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #313131;
+    color: #999;
+    border-width: .1rem .1rem .2rem .1rem;
+    border-style: solid;
+    border-color: #222;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'MontSerrat', Tahoma, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
+    margin: .5rem;
+    opacity: 1;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button a span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn::before {
+    content: " ";
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background-color: #515151;
+    transform: translateX(-105%);
+    transition: transform .3s cubic-bezier(.65, .05, .1, 1);
+}
+
+.btn:hover::before {
+    transform: translateX(0);
 }
 
 /* project slide */
@@ -68,7 +114,7 @@ header .head-text {
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 6rem 20vw;
+    margin: 2rem 20vw 2rem 20vw;
 }
 
 .project {
@@ -156,7 +202,6 @@ header .head-text {
     transform: translate3d(0, 0, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project1-2.png);
     background-size: cover;
-    cursor: pointer;
 }
 
 .project-grid .project .project2-img {
@@ -179,7 +224,6 @@ header .head-text {
     transform: translate3d(0, 0, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project2-2.png);
     background-size: cover;
-    cursor: pointer;
 }
 
 .project-grid .project .project3-img {
@@ -202,7 +246,6 @@ header .head-text {
     transform: translate3d(0, 0, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project3-2.png);
     background-size: cover;
-    cursor: pointer;
 }
 
 .project-grid .project .project4-img {
@@ -225,7 +268,6 @@ header .head-text {
     transform: translate3d(0, 0, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project4-1.png);
     background-size: cover;
-    cursor: pointer;
 }
 
 .project-grid .project .project5-img {
@@ -248,7 +290,6 @@ header .head-text {
     transform: translate3d(0, 0, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project5-1.png);
     background-size: cover;
-    cursor: pointer;
 }
 
 .project-grid .project .project6-img {
@@ -271,7 +312,6 @@ header .head-text {
     transform: translate3d(0, 0, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/project6-2.png);
     background-size: cover;
-    cursor: pointer;
 }
 
 .category-tag {
@@ -306,13 +346,15 @@ header .head-text {
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding: .5rem 1rem;
+    padding: .5rem 0;
     height: 2rem;
     line-height: 2rem;
     background-color: #CACACA;
     color: #2A2A2A;
-    width: 8rem;
+    width: 10rem;
     margin-top: 2rem;
+    font-family: 'MontSerrat', Tahoma, Arial, sans-serif;
+    font-size: 1rem;
 }
 
 .go-btn a {
@@ -412,4 +454,28 @@ header .head-text {
         transform: rotateY(0deg);
         visibility: visible;
     }
+}
+
+.contact {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact .contact-talk {
+    font-size: 2rem;
+    font-family: 'MontSerrat', Tahoma, Arial, sans-serif;
+    font-weight: 700;
+    color: #6D6D6D;
+    margin-bottom: 2rem;
+}
+
+.contact .contact-email {
+    font-size: 1.5rem;
+    color: #6D6D6D;
+    font-family: 'MontSerrat', Tahoma, Arial, sans-serif;
+    margin-bottom: 4rem;
+}
+
+.contact .contact-email span {
+    color: #CACACA;
 }
