@@ -16,6 +16,4 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
 }
 
-//paste this code under the head tag or in a separate js file.
-	// Wait for window load
 	
