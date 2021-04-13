@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
 </head>
 <body onload="typeWriter()">
+    <div class="se-pre-con"></div>
     <div class="present-text" id="presentText">
         <div id="presentText1"></div>
         <div id="presentText2"></div>
@@ -160,5 +161,11 @@
             Feel free to contact me via email at<span> hoangdongpfiev@gmail.com</span></div>
     </div>
     <script src="myjs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script>$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});</script>
 </body>
 </html>
