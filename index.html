@@ -165,8 +165,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script>$(window).load(function() {
 		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");
+		$.when($(".se-pre-con").fadeOut("slow")).then(typeWriter());
 	});
-    typeWriter();</script>
+    </script>
 </body>
 </html>
