@@ -28,7 +28,7 @@ body {
     text-align: center;
     font-family: 'MontSerrat', Tahoma, Arial, sans-serif;
     color: gainsboro;
-    animation: fadeOut .5s ease-out 8s forwards;
+    animation: fadeOut .5s ease-out 6s forwards;
     transition: all .5s cubic-bezier(0.39, 0.575, 0.565, 1);
     overflow: hidden;
 }
@@ -51,7 +51,7 @@ body {
 
     100% {
         opacity: 0;
-        transform: scale(10);
+        transform: scale(0.01);
         visibility: hidden;
     }
 }
