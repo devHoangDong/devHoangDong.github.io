@@ -81,6 +81,10 @@ header .head-text {
     margin: 4rem auto 2rem auto;
 }
 
+.nav-button .active {
+    background-color: #515151;
+}
+
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -157,6 +161,10 @@ header .head-text {
     width: 45%;
     margin-bottom: 6rem;
     position: relative;
+    display: none;
+}
+.show {
+    display: block;
 }
 
 .project img {
